@@ -19,17 +19,17 @@ const Hero = () => {
                 <div id='left'>
                     <div className='card1'>
                         <div style={{ position: 'relative' }}>
-                            <img src='/sparkle.svg' alt='Sparkle' />
+                            <img src='/images/sparkle.svg' alt='Sparkle' />
                             <h3>40%</h3>
                         </div>
                         <p>Achieved reduction in<br /> project execution time<br /> by optimising team<br /> availability</p>
                     </div>
                     <div className='people-img'>
-                        <img src='/people.png' alt='People' />
+                        <img src='/images/people.png' alt='People' />
                     </div>
                     <div className='card2'>
                         <div className='left'>
-                            <img src='/rocket.svg' alt='Rocket' />
+                            <img src='/images/rocket.svg' alt='Rocket' />
                         </div>
                         <div className='right'>
                             <h3>10 DAYS</h3>
@@ -56,7 +56,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <button className='explore-btn'>
-                        Explore More <img src='/arrow.svg' alt='Arrow' />
+                        Explore More <img src='/images/arrow.svg' alt='Arrow' />
                     </button>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const Hero = () => {
                         <h3>What’s on your mind</h3>
                         <p>Ask Questions</p>
                     </div>
-                    <img src='a.svg' alt='A' />
+                    <img src='/images/a.svg' alt='A' />
                 </div>
                 <div className='right'>
                     {accordionData.map((item, index) => (

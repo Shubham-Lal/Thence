@@ -1,0 +1,60 @@
+#register-nav {
+    margin: 20px auto 0 auto;
+    padding: 0 17.5px;
+    max-width: 1392px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid transparent;
+}
+
+#register-nav .logo {
+    padding-left: 20px;
+    width: 120px;
+}
+
+#register-nav .close-btn {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #CACACA;
+    border-radius: 50%;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#register-nav .close-btn:hover {
+    background-color: #F1F1F1;
+}
+
+#register-nav .close-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #register-nav {
+        margin: 0;
+        height: 80px;
+        padding: 15px;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+    }
+
+    #register-nav .logo {
+        padding-left: 0;
+        width: 50px;
+    }
+
+    #register-nav .close-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    #register-nav .close-btn img {
+        width: 15px;
+        height: 15px;
+    }
+}
