@@ -72,11 +72,8 @@ const Hero = () => {
                 <div className='right'>
                     {accordionData.map((item, index) => (
                         <div key={index}>
-                            <div
-                                className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
-
-                            >
-                                <div className='accordion-title' onClick={() => setActiveIndex(index)}>
+                            <div className={`accordion-item ${activeIndex === index ? 'active' : ''}`}>
+                                <div className='accordion-title' onClick={() => setActiveIndex(activeIndex === index ? null : index)}>
                                     {item.title}
                                     <span className='accordion-icon'>{activeIndex === index ? '-' : '+'}</span>
                                 </div>
