@@ -24,7 +24,7 @@
 }
 
 #hero .leads {
-    margin-top: 100px;
+    margin: 100px 20px 0 20px;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -104,6 +104,7 @@
     flex-direction: column;
     gap: 10px;
     background-color: #002E18;
+    border: 1px solid #3D3D3D;
     border-radius: 20px;
     box-shadow: -10px 10px 30px -3px rgba(0, 0, 0, 0.1);
 }
@@ -194,13 +195,14 @@
 #hero .leads #right .explore-btn {
     margin-top: 120px;
     width: fit-content;
-    padding: 17.5px 30px;
+    padding: 25px 35px;
     display: flex;
-    gap: 10px;
+    align-items: center;
     justify-content: start;
+    gap: 10px;
     background-color: #1C1C1C;
     color: #FFFFFF;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     border-radius: 50px;
     transition: background-color 0.15s ease-in-out;
@@ -210,7 +212,40 @@
     background-color: #454444;
 }
 
+#hero .questions {
+    margin: 200px 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #E8EEE7;
+    border-radius: 30px;
+}
+
+#hero .questions .left .header {
+    padding: 50px;
+}
+
+#hero .questions .left .header h3 {
+    font-family: 'CoveredByYourGrace', cursive;
+    font-size: 30px;
+    color: #9E9D9D;
+}
+
+#hero .questions .left .header p {
+    font-size: 45px;
+    font-weight: 600;
+    color: #1C1C1C;
+}
+
+#hero .questions .right {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 1100px) {
+    #hero .leads {
+        margin: 100px 0 0 0;
+    }
+
     #hero .leads #left .card1 {
         position: relative;
     }
@@ -219,9 +254,25 @@
         top: 0;
         bottom: unset;
     }
+
+    #hero .questions {
+        margin: 200px 0 0 0;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    #hero .questions .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero .questions .left img {
+        width: 25%;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     #hero .leads {
         margin: 100px auto 0 auto;
         width: 98%;
@@ -244,5 +295,14 @@
 
     #hero .leads #right .explore-btn {
         margin: 50px auto 0 auto;
+    }
+
+    #hero .questions {
+        margin: 200px auto 0 auto;
+        width: 98%;
+    }
+
+    #hero .questions .left img {
+        width: 50%;
     }
 }

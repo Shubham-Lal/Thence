@@ -58,7 +58,16 @@ const Hero = () => {
             </div>
 
             <div className='questions'>
-
+                <div className='left'>
+                    <div className='header'>
+                        <h3>What’s on your mind</h3>
+                        <p>Ask Questions</p>
+                    </div>
+                    <img src='a.svg' alt='A' />
+                </div>
+                <div className='right'>
+                    
+                </div>
             </div>
         </main>
     )
