@@ -81,14 +81,12 @@ const Hero = () => {
                                     {item.content}
                                 </div>
                             </div>
-                            <div
-                                style={{
-                                    margin: '20px 0 30px 0',
-                                    width: '100%',
-                                    height: '1px',
-                                    background: accordionData.length !== index + 1 ? '#D7D7D7' : ''
-                                }}
-                            />
+                            <div style={{
+                                margin: '20px 0 30px 0',
+                                width: '100%',
+                                height: '1px',
+                                background: accordionData.length !== index + 1 ? '#D7D7D7' : ''
+                            }} />
                         </div>
                     ))}
                 </div>
