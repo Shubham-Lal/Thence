@@ -22,3 +22,190 @@
     text-align: center;
     line-height: 55px;
 }
+
+#hero .leads {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#hero .leads #left {
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero .leads #left .card1 {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 250px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: -10px 10px 30px -3px rgba(0, 0, 0, 0.1);
+}
+
+#hero .leads #left .card1 img {
+    position: absolute;
+    top: -45px;
+    left: -40px;
+}
+
+#hero .leads #left .card1 h3 {
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+#hero .leads .left .card1 p {
+    color: #828282;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#hero .leads #left .card2 {
+    position: absolute;
+    bottom: 30px;
+    left: 75px;
+    width: 220px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: -10px 10px 30px -3px rgba(0, 0, 0, 0.1);
+}
+
+#hero .leads #left .card2 .left {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background-color: #DDEFE0;
+    border-radius: 50%;
+}
+
+#hero .leads #left .card2 .right span {
+    width: 100%;
+    font-weight: 500;
+    color: #828282;
+}
+
+#hero .leads #left .card3 {
+    position: absolute;
+    bottom: -40px;
+    right: 75px;
+    width: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #002E18;
+    border-radius: 20px;
+    box-shadow: -10px 10px 30px -3px rgba(0, 0, 0, 0.1);
+}
+
+#hero .leads #left .card3 .top {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+}
+
+#hero .leads #left .card3 .top h3 {
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+#hero .leads #left .card3 .top span {
+    font-weight: 500;
+    color: #828282;
+    padding-bottom: 6px;
+}
+
+#hero .leads #left .card3 .bottom {
+    font-weight: 500;
+    color: #CCCCCC;
+}
+
+#hero .leads #left .people-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#hero .leads #left .people-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero .leads #right {
+    width: 40%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero .leads #right .swiper p {
+    color: #1C1C1C;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+#hero .leads #right .swiper .swiper-btns {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#hero .leads #right .swiper .swiper-btns button:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    background-color: #2DA950;
+    border-radius: 50%;
+}
+
+#hero .leads #right .swiper .swiper-btns button:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background-color: #E4E3E3;
+    border-radius: 50%;
+}
+
+#hero .leads #right .swiper .swiper-btns button:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    background-color: #E4E3E3;
+    border-radius: 50%;
+}
+
+#hero .leads #right .swiper .swiper-btns button:nth-child(2):hover,
+#hero .leads #right .swiper .swiper-btns button:nth-child(3):hover {
+    background-color: #CAD0CB;
+}
+
+#hero .leads #right .explore-btn {
+    margin-top: 120px;
+    width: fit-content;
+    padding: 17.5px 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#hero .leads #right .explore-btn:hover {
+    background-color: #454444;
+}

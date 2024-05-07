@@ -31,7 +31,7 @@
     font-size: 17px;
     font-weight: 500;
     border-radius: 50px;
-    transition: 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
 }
 
 #home-nav .nav-btns a {
@@ -49,4 +49,30 @@
 
 #home-nav .nav-btns button:hover {
     background-color: #454444;
+}
+
+@media screen and (max-width: 600px) {
+    #home-nav {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        padding: 15px;
+        border-radius: unset;
+    }
+
+    #home-nav .logo {
+        padding-left: 0;
+        width: 50px;
+    }
+
+    #home-nav .nav-btns {
+        gap: 10px;
+    }
+
+    #home-nav .nav-btns a,
+    #home-nav .nav-btns button {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
 }

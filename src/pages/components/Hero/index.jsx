@@ -11,11 +11,53 @@ const Hero = () => {
                 </p>
             </div>
 
-            <div id='leads'>
-
+            <div className='leads'>
+                <div id='left'>
+                    <div className='card1'>
+                        <div style={{ position: 'relative' }}>
+                            <img src='/sparkle.svg' alt='Sparkle' />
+                            <h3>40%</h3>
+                        </div>
+                        <p>Achieved reduction in<br /> project execution time<br /> by optimising team<br /> availability</p>
+                    </div>
+                    <div className='people-img'>
+                        <img src='/people.png' alt='People' />
+                    </div>
+                    <div className='card2'>
+                        <div className='left'>
+                            <img src='/rocket.svg' alt='Rocket' />
+                        </div>
+                        <div className='right'>
+                            <h3>10 DAYS</h3>
+                            <span>Staff Deployment</span>
+                        </div>
+                    </div>
+                    <div className='card3'>
+                        <div className='top'>
+                            <h3>$0.5</h3>
+                            <span>MILLION</span>
+                        </div>
+                        <p className='bottom'>
+                            Reduced client expenses<br /> by saving on hiring and employee costs.<br />
+                        </p>
+                    </div>
+                </div>
+                <div id='right'>
+                    <div className='swiper'>
+                        <p>Enhance fortune 50<br /> company’s insights<br /> teams research<br /> capabilities</p>
+                        <div className='swiper-btns'>
+                            <button />
+                            <button />
+                            <button />
+                        </div>
+                    </div>
+                    <button className='explore-btn'>
+                        Explore More <img src='/arrow.svg' alt='Arrow' />
+                    </button>
+                </div>
             </div>
 
-            <div id='questions'>
+            <div className='questions'>
 
             </div>
         </main>
