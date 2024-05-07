@@ -1,6 +1,6 @@
 import './style.css'
 import { useState } from 'react'
-import { accordionData } from '../../../data/accordionData'
+import { accordionData } from '../../../../data/accordionData'
 
 const Hero = () => {
     const [activeIndex, setActiveIndex] = useState(2);
