@@ -1,6 +1,10 @@
 import './style.css'
+import { useState } from 'react'
+import { accordionData } from '../../../data/accordionData'
 
 const Hero = () => {
+    const [activeIndex, setActiveIndex] = useState(2);
+
     return (
         <main id='hero'>
             <div className='success-msg'>
@@ -66,7 +70,30 @@ const Hero = () => {
                     <img src='a.svg' alt='A' />
                 </div>
                 <div className='right'>
-                    
+                    {accordionData.map((item, index) => (
+                        <div key={index}>
+                            <div
+                                className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
+
+                            >
+                                <div className='accordion-title' onClick={() => setActiveIndex(index)}>
+                                    {item.title}
+                                    <span className='accordion-icon'>{activeIndex === index ? '-' : '+'}</span>
+                                </div>
+                                <div className='accordion-content'>
+                                    {item.content}
+                                </div>
+                            </div>
+                            <div
+                                style={{
+                                    margin: '20px 0 30px 0',
+                                    width: '100%',
+                                    height: '1px',
+                                    background: accordionData.length !== index + 1 ? '#D7D7D7' : ''
+                                }}
+                            />
+                        </div>
+                    ))}
                 </div>
             </div>
         </main>
