@@ -1,9 +1,10 @@
 import './style.css'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useContext, useState } from 'react'
+import ConfirmationContext from '../../ConfirmationContext'
+import Confirmation from './components/confirm'
 
 export default function Register() {
-    const navigate = useNavigate();
+    const { isConfirmed, setIsConfirmed } = useContext(ConfirmationContext);
 
     const [error, setError] = useState('');
     const [details, setDetails] = useState({
@@ -35,40 +36,42 @@ export default function Register() {
         }
 
         setError('');
-        navigate('/success', { replace: true });
+        setIsConfirmed(true);
     };
 
     return (
-        <div id='register'>
-            <h1>Registration Form</h1>
-            <p className='header'>Start your success<br />Journey here!</p>
-            <form onSubmit={handleSubmit}>
-                <input
-                    placeholder='Enter your name'
-                    name='name'
-                    value={details.name}
-                    onChange={handleInputChange}
-                />
-                <input
-                    placeholder='Enter your email'
-                    name='email'
-                    value={details.email}
-                    onChange={handleInputChange}
-                />
-                {error && (
-                    <div className='error-msg'>
-                        <img src='/images/error.svg' alt='Error' />
-                        <p>{error}</p>
-                    </div>
-                )}
-                <button
-                    type='submit'
-                    disabled={!details.name.trim() || !details.email.trim()}
-                    className={`${!details.name.trim() || !details.email.trim() ? 'disabled' : 'allowed'}`}
-                >
-                    Submit
-                </button>
-            </form>
-        </div>
+        isConfirmed ? <Confirmation /> : (
+            <div id='register'>
+                <h1>Registration Form</h1>
+                <p className='header'>Start your success<br />Journey here!</p>
+                <form onSubmit={handleSubmit}>
+                    <input
+                        placeholder='Enter your name'
+                        name='name'
+                        value={details.name}
+                        onChange={handleInputChange}
+                    />
+                    <input
+                        placeholder='Enter your email'
+                        name='email'
+                        value={details.email}
+                        onChange={handleInputChange}
+                    />
+                    {error && (
+                        <div className='error-msg'>
+                            <img src='/images/error.svg' alt='Error' />
+                            <p>{error}</p>
+                        </div>
+                    )}
+                    <button
+                        type='submit'
+                        disabled={!details.name.trim() || !details.email.trim()}
+                        className={`${!details.name.trim() || !details.email.trim() ? 'disabled' : 'allowed'}`}
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
+        )
     );
 }

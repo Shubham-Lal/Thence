@@ -1,8 +1,11 @@
 import './style.css'
+import { useContext } from 'react'
 import { useLocation, Link } from 'react-router-dom'
+import ConfirmationContext from '../../ConfirmationContext';
 
 const Navbar = () => {
     const location = useLocation();
+    const { isConfirmed } = useContext(ConfirmationContext);
 
     return (
         <nav id='navbar' className={`${location.pathname !== '/' ? 'other' : ''}`}>
@@ -18,7 +21,7 @@ const Navbar = () => {
                     <Link to='/register'>Get Projects</Link>
                     <button>Onboard Talent</button>
                 </div>
-            ) : location.pathname === '/register' && (
+            ) : location.pathname === '/register' && !isConfirmed &&  (
                 <Link to='/' className='close-btn'>
                     <img src='/images/close.svg' alt='Add' />
                 </Link>

@@ -11,7 +11,7 @@ const Hero = () => {
                 <p>Success Stories</p>
                 <p>
                     Every success journey<br />
-                    we've encountered.
+                    we&apos;ve encountered.
                 </p>
             </div>
 
@@ -53,7 +53,7 @@ const Hero = () => {
                         className='square'
                     />
                     <div className='swiper'>
-                        <p>Enhance fortune 50<br /> company’s insights<br /> teams research<br /> capabilities</p>
+                        <p>Enhance fortune 50<br /> company&apos;s insights<br /> teams research<br /> capabilities</p>
                         <div className='swiper-btns'>
                             <button />
                             <button />
@@ -69,7 +69,7 @@ const Hero = () => {
             <div className='questions'>
                 <div className='left'>
                     <div className='header'>
-                        <h3>What’s on your mind</h3>
+                        <h3>What&apos;s on your mind</h3>
                         <p>Ask Questions</p>
                     </div>
                     <img src='/images/a.svg' alt='A' />
