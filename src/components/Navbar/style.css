@@ -1,4 +1,4 @@
-#home-nav {
+#navbar {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -16,19 +16,23 @@
     z-index: 1;
 }
 
-#home-nav .logo {
+#navbar.other {
+    border-color: transparent;
+}
+
+#navbar .logo {
     padding-left: 20px;
     width: 120px;
 }
 
-#home-nav .nav-btns {
+#navbar .nav-btns {
     display: flex;
     align-items: center;
     gap: 17.5px;
 }
 
-#home-nav .nav-btns a,
-#home-nav .nav-btns button {
+#navbar .nav-btns a,
+#navbar .nav-btns button {
     padding: 17.5px 30px;
     font-size: 17px;
     font-weight: 500;
@@ -36,25 +40,44 @@
     transition: background-color 0.15s ease-in-out;
 }
 
-#home-nav .nav-btns a {
+#navbar .nav-btns a {
     border: 1px solid #EAEAEA;
 }
 
-#home-nav .nav-btns button {
+#navbar .nav-btns button {
     background-color: #1C1C1C;
     color: #FFFFFF;
 }
 
-#home-nav .nav-btns a:hover {
+#navbar .nav-btns a:hover {
     background-color: #F1F1F1;
 }
 
-#home-nav .nav-btns button:hover {
+#navbar .nav-btns button:hover {
     background-color: #454444;
 }
 
+#navbar .close-btn {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #CACACA;
+    border-radius: 50%;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#navbar .close-btn:hover {
+    background-color: #F1F1F1;
+}
+
+#navbar .close-btn img {
+    width: 20px;
+    height: 20px;
+}
+
 @media screen and (max-width: 600px) {
-    #home-nav {
+    #navbar {
         top: 0;
         left: 0;
         right: 0;
@@ -66,18 +89,28 @@
         border-radius: unset;
     }
 
-    #home-nav .logo {
+    #navbar .logo {
         padding-left: 0;
         width: 50px;
     }
 
-    #home-nav .nav-btns {
+    #navbar .nav-btns {
         gap: 10px;
     }
 
-    #home-nav .nav-btns a,
-    #home-nav .nav-btns button {
+    #navbar .nav-btns a,
+    #navbar .nav-btns button {
         padding: 10px 15px;
         font-size: 15px;
+    }
+
+    #navbar .close-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    #navbar .close-btn img {
+        width: 15px;
+        height: 15px;
     }
 }

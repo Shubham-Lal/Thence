@@ -47,6 +47,11 @@ const Hero = () => {
                     </div>
                 </div>
                 <div id='right'>
+                    <img
+                        src='/images/square.svg'
+                        alt='Square'
+                        className='square'
+                    />
                     <div className='swiper'>
                         <p>Enhance fortune 50<br /> company’s insights<br /> teams research<br /> capabilities</p>
                         <div className='swiper-btns'>
