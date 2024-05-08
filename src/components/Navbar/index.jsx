@@ -18,7 +18,7 @@ const Navbar = () => {
                     <Link to='/register'>Get Projects</Link>
                     <button>Onboard Talent</button>
                 </div>
-            ) : (
+            ) : location.pathname === '/register' && (
                 <Link to='/' className='close-btn'>
                     <img src='/images/close.svg' alt='Add' />
                 </Link>
